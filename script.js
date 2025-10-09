@@ -26,7 +26,7 @@ function respond(answer) {
         : "Oh… maybe next time 😢";
 }
 
-// // Canva link integration
-// function goToCanva(){
-//     window.location.href = "https://www.canva.com/design/DAGg-fGIpq8/VIXuBWzopXijq-Gnz_9Y3g/edit?utm_content=DAGg-fGIpq8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton";
-// }
+
+function goToCanva(){
+    window.location.href = "https://drive.google.com/file/d/1ZO5N54xUSXCKZTw0iBt6uYFDwLc4n6Ic/view?usp=sharing";
+}
