@@ -1,0 +1,47 @@
+body {
+    font-family: 'Comic Sans MS', cursive;
+    text-align: center;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 { color: #d6336c; }
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+button:hover {
+    transform: scale(1.1);
+}
+.yes { background: #4CAF50; color: white; }
+.no { background: #f44336; color: white; }
+
+#puzzle { font-size: 20px; margin-top: 20px; }
+#invite { display: none; }
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+
+.heart {
+    width: 100px;
+    margin-top: 20px;
+    animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}

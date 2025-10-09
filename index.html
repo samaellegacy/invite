@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Secret Invite</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio autoplay loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+    <h1>🤫 Secret Invite 🤫</h1>
+    <p id="intro">Solve this puzzle to unlock your date invitation:</p>
+
+    <div id="puzzle">
+        <p>🔍 What has keys but can't open locks?</p>
+        <input type="text" id="answer" placeholder="Your answer here">
+        <br>
+        <button onclick="checkAnswer()">Submit</button>
+    </div>
+
+    <div id="invite">
+        <img src="images/heart.png" class="heart">
+        <h1>🎉 You unlocked it! 🎉</h1>
+        <p id="personalMessage"></p>
+        <p>Will you say yes?</p>
+        <button class="yes" onclick="respond('yes')">Yes 💖</button>
+        <button class="no" onclick="respond('no')">No 😢</button>
+        <p id="response" style="margin-top:20px;"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
