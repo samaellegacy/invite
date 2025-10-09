@@ -7,7 +7,7 @@ document.getElementById("personalMessage").innerText = `Hey ${name},`;
 // Puzzle logic with 5-second reveal
 function checkAnswer(){
     const ans = document.getElementById('answer').value.trim().toLowerCase();
-    if(ans === "piano" || ans === "keyboard"){
+    if(ans === "piano" || ans === "a piano" || ans === "keyboard"){
         document.getElementById('puzzle').style.display = 'none';
         document.getElementById('loading').style.display = 'block';
 
@@ -26,7 +26,7 @@ function respond(answer) {
         : "Oh… maybe next time 😢";
 }
 
-// Canva link integration
-function goToCanva(){
-    window.location.href = "https://www.canva.com/design/DAGg-fGIpq8/VIXuBWzopXijq-Gnz_9Y3g/edit?utm_content=DAGg-fGIpq8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton";
-}
+// // Canva link integration
+// function goToCanva(){
+//     window.location.href = "https://www.canva.com/design/DAGg-fGIpq8/VIXuBWzopXijq-Gnz_9Y3g/edit?utm_content=DAGg-fGIpq8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton";
+// }
