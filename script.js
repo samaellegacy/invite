@@ -2,13 +2,13 @@
 const urlParams = new URLSearchParams(window.location.search);
 const name = urlParams.get('name') || "there";
 
-// Personalized message
+// Set personalized message
 document.getElementById("personalMessage").innerText = `Hey ${name},`;
 
 // Puzzle logic
 function checkAnswer() {
   const ans = document.getElementById('answer').value.trim().toLowerCase();
-  if (ans === "piano" || ans === "keyboard" || ans === "a piano") {
+  if (ans === "piano" || ans === "a piano" || ans === "keyboard") {
       document.getElementById('puzzle').style.display = 'none';
       document.getElementById('loading').style.display = 'block';
 
@@ -23,12 +23,13 @@ function checkAnswer() {
 
 // Handle yes/no buttons
 function respond(answer) {
-  document.getElementById('response').innerHTML =
-    answer === 'yes' ? "Yay! Can't wait 😍" : "Oh… maybe next time 😢";
+  const responseEl = document.getElementById('response');
+  responseEl.innerHTML = answer === 'yes'
+      ? "Yay! Can't wait 😍"
+      : "Oh… maybe next time 😢";
 }
 
-// Redirect to Canva invite
 function goToCanva() {
-  window.location.href =
-    "https://www.canva.com/design/DAGg-fGIpq8/VIXuBWzopXijq-Gnz_9Y3g/edit?utm_content=DAGg-fGIpq8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton";
+  // Canva invitation link
+  window.location.href = "https://drive.google.com/file/d/1ZO5N54xUSXCKZTw0iBt6uYFDwLc4n6Ic/view?usp=sharing";
 }
