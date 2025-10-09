@@ -4,16 +4,17 @@ const name = urlParams.get('name') || "there";
 
 document.getElementById("personalMessage").innerText = `Hey ${name},`;
 
+// Puzzle logic with 5-second reveal
 function checkAnswer(){
     const ans = document.getElementById('answer').value.trim().toLowerCase();
-    if(ans === "piano" || ans === "keyboard" || ans === "a piano"){
+    if(ans === "piano" || ans === "keyboard"){
         document.getElementById('puzzle').style.display = 'none';
         document.getElementById('loading').style.display = 'block';
 
         setTimeout(() => {
             document.getElementById('loading').style.display = 'none';
             document.getElementById('invite').style.display = 'block';
-        }, 5000); // 5-second reveal
+        }, 5000); // 5-second delay
     } else {
         alert("Hmm… try again 😜");
     }
