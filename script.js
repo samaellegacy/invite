@@ -31,5 +31,5 @@ function respond(answer) {
 
 function goToCanva() {
   // Canva invitation link
-  window.location.href = "https://www.canva.com/design/DAGg-fGIpq8/VIXuBWzopXijq-Gnz_9Y3g/edit?utm_content=DAGg-fGIpq8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton";
+  window.location.href = "https://drive.google.com/file/d/1lv8gfammYMWPizwjwYCAiuxUn-P2tFrV/view?usp=sharing";
 }
